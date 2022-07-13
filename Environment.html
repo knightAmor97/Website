@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enviormental issues</title>
+        <link href = "style.css" rel="stylesheet">
+        <script src="slider.js" defer></script>
+        <script src="responsiveNavbar.js" defer></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div id = "logo">
+                <span>&#9842;</span>
+                Raymond Industries
+            </div>
+            <a href="#" class="togglebutton">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class ="navbar-links">
+                
+                <ul>
+                    <li> <div class="dropdown">
+                        <button class="dropbtn">
+                            <span>&#9881;</span>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"><input type="checkbox" id="check" class="toggle">
+                                <label for = "check"> </label>
+                            </a>
+                        </div>
+                    </div></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="ethical_issues.html">ethical-issues-in-technology</a></li>
+                    <li><a href="Environment.html">enviormental issues of technology</a></li>
+                    <li><a href="AI.html">humans vs computers</a></li>
+                </ul>
+            </div>
+
+            
+        </nav>
+
+        <div class = "main-page">
+            <div class="front-img">
+                <img src="Environment.JPG" alt="front"  width=2268px length=1400px style="max-width:100%;height:auto;">
+				<div class="centered" style="font-size: auto;">
+					<h1>The only thing that the earth demand is a clean environment.</h1>
+				</div>
+			</div>
+            <img src="Pollution.jpg" alt="pollution" width=300px length=168px style="border-style:groove; float: right; padding: 5px;">
+
+			<h2>pollution</h2>
+            <p>Computers can effect the enviornment because they can cause alot of pollution when using and producing them</p>
+            <ul>
+                <p>types of pollution thats caused is</p>
+                <li>land</li>
+                <li>sea</li>
+                <li>air</li>
+                <li>noise</li>
+            </ul>
+            <h2>Land & sea pollution</h2>
+            <p>Computers, when people finished using them, are put in the dump. This would cause land pollution as the toxic chemicals in the computer will pollute the soil. This would overtime contaminate the plants around it and would effect the animals.</p>
+            <p>For sea pollution the exact same thing happens but this times it can kill the life within the sea due to the toxic chemicals spreading to the ocean and sea if computers are dumped into the river</p>
+            <h2>air pollution</h2>
+            <p>Computers add more to power plants. This is because more energy is needed to power all the computers in the world. This effects the air because tons of CO<sub>2</sub> and other greenhouses gases are emmited into thr air. This would lead to global warming </p>
+            <h2>Noise pollution</h2>
+            <p>While over the years businesses have been investing money to reduce noise of computer components, they still create lots of noise. This is because PC components like the CPU generate alot of heat. This causes the need for fans. These fans can generate alot of noise in order to keep the computer cool. Hard drives would also cause alot of noise because as the platters than spin cause alot of noise and vibrations</p>
+            <br>
+            <br>
+            <br>
+            <img src="e-waste.jpg" alt="e-waste"  width=300px length=168px style="border-style:groove; float: left; padding: 5px;">
+            <h2>E-waste</h2>
+            <p>E-waste is any electrical device thats been discarded. This is due to people putting electrical devices into the bin instead of recycling or reusing them. This then ends up in landfill and causing dangerous amounts of land pollution.</p>
+            <ul>
+                <h4>Here are some statistics of e-waste:</h4>
+                <li>20-50 million tonnes of e-waste is generated each year</li>
+                <li>the Uk disposes 1 million tonnes of e-waste each year</li>
+                <li>45 tonnes of e-waste for every 100 tonenes are re-used. - thats only 45% of people who are recycling each year!</li>  
+            </ul>            
+            <p>However the EU has been trying to counter-act this. A new law was introduced to oblige companies to accept smaller electronics for recycling</p> <br> <br> <br>
+            <h1 style="font-size:xxx-large;">However...</h1>
+            <h2>There are some advantages of technolgy to the environment</h2>
+            <ul>
+                <li>Emails and text messages have stopped the need for travelling or using paper - worse on the environment</li>
+                <li>Factime, Teams and Zoom can reduce the need for in person meetings for a business. This can also help people work from home causing no need to travel and release harmful gases</li>
+            </ul>
+        </div> <br>
+        <div class = "footer">
+            <div class = "questions-form">
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto&display=swap');
+                    h1 {
+                        font-family: 'Noto Sans JP', sans-serif;
+                        margin: 2%;
+                        font-size: 17px;
+                    }
+
+                    .questions-form {
+                        font-family: 'Noto Sans JP', sans-serif;
+                        margin: 2%;
+                    }
+                </style>
+                <h1>any questions? Contact us!</h1>
+                <form method="get" enctype="text/plain">
+                    <b>Name:</b><br><input type="name" name="name" id="name" required><br><br>
+                    <b>Email:</b><br><input type="email" name="email" id="email" required><br><br>
+                    <b> Message:</b><br><textarea rows="5" cols="30" name="message"  required></textarea><br><br>
+                    <input type="submit" value="submit" onclick="valid()">
+                    <input type="reset" value="reset">
+                    <p id="validation"></p>
+                </form>
+                <script>
+                    function valid() {
+                        let val = document.getElementById('name').value;
+                        if(val !="") {
+                           text = "invalid input" 
+                        }
+                    }
+                </script>
+            </div>
+            <div id="newssources">
+                <h1>Tech news</h1>
+                <button class ="news-button">
+                    <a href="https://www.bbc.co.uk/news/technology"><img src="BBC.JPG" alt="BBC" width="156px" length="131px"> </a>
+                </button> <br><br>
+                <button class ="news-button">
+                    <a href="https://www.wired.co.uk/topic/technology"><img src="WIRED.JPG" alt="BBC" width="156px" length="131px"></a>
+                </button> <br><br>
+
+                <button class ="news-button">
+                    <a href="https://www.techradar.com/uk"><img src="techradar.JPG" alt="BBC" width="156px" length="131px"></a>
+                </button> <br><br>
+
+            </div>
+        </div>
+    </body>
+</html>

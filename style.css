@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004b00;
+    color:white;
+    height: 100%;
+    width: auto;
+    top:0;
+    position: relative;
+}
+
+#logo{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: grey;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    right: 430px;
+    outline: none;
+    margin: 0;
+    text-align: center;
+
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: grey;
+}
+
+.dropdown .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius:10px;
+}
+
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display:inline-block ;
+    padding: 0px, 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    transition: all 0.3s ease 0s;
+}
+
+input[type = "checkbox"].toggle{
+    opacity: 0;
+    position: absolute;
+}
+input[type="checkbox"].toggle + label{
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+input[type = "checkbox"].toggle + label::before {
+    content:"";
+    width: 4em;
+    height: 2em;
+    background-color: #ddd;
+    border-radius: 1em;
+    margin-right: .25em;
+    transition: 200ms ease-in-out;
+}
+
+input[type = "checkbox"].toggle:checked + label::before {
+    background-color: grey;
+    
+}
+
+input[type = "checkbox"].toggle + label::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: .1em;
+    content:"\2600";
+    font-size: .7em;
+    left: .6em;
+    color: black;
+    width: 2.2em;
+    height: 2.2em;
+    background-color: white;
+    border-radius: 1em;
+    transition: 200ms ease-in-out;
+}
+
+input[type="checkbox"].toggle:focus + label::before{
+    outline: 1px solid black;
+}
+
+input[type = "checkbox"].toggle:checked + label::after {
+    content: "\263D";
+    transform: translateX(100%);
+    background-color: white;
+
+}
+
+input[type="checkbox"].toggle::disabled + label{
+    color: #777;
+}
+
+body{
+    --accent-color:#EEE0DD;
+    --background-color:white;
+    --text-color:black;
+    --button-text-color: var(--text-color);
+
+    transition-delay: 1s;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: var(--transition-delay);
+
+}
+body.dark{
+    --accent-color:black;
+    --background-color:#333;
+    --text-color:white;
+}
+
+.togglebutton {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.togglebutton .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media(max-width: 600px) {
+    .togglebutton {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar  {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.main-page {
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    block-size: 150vh;
+    scroll-snap-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.yt-video {
+    position:absolute;
+    padding: 4px 5px;
+}
+
+table, td, th{
+    border: 1px solid black;
+    font-size: medium;
+    transition: 2s;
+}
+
+table {
+    box-shadow: 5px 4px #666;
+    animation-name:shadow;
+    animation-duration: 2s
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 5px 4px #666;
+    }
+
+    100% {
+        box-shadow: 5px  4px #666;
+    }
+}
+
+#about-us {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+    position: relative;
+    margin: 20px;
+    top: 160px;
+}
+
+.front_img {
+	max-width:100%;
+	height:auto;
+    display: grid;
+    transition: all .5s;
+    user-select: none;
+}
+
+.video {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: grid;
+}
+
+.centered {
+    color:#006400;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    animation-duration: 5.5s;
+    animation-name: slideup;
+    animation-iteration-count: 1; 
+    font-family: 'Roboto', sans-serif;
+}
+
+        .code{
+        white-space: nowrap;
+        font-size: 0.9rem;
+        align-items: center;
+        color: rgb(0 128 0);
+        font-family: monaco, Consolas, "Lucida Console", monospace;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+    .code h1{
+        font-size: 40px;
+        text-align: center;
+        font-family: monaco, Consolas, "Lucida Console", monospace;
+    }
+
+    .code .imas{
+        font-size: 0.9rem;
+        display: inline;
+    }
+
+  .c2{
+      display: inline-block;
+      margin-top: 5%;
+    }
+
+  .typed-out {
+      overflow: hidden;
+      border-right: .15em solid rgb(0 128 0);
+      white-space: nowrap;
+      margin-top: 10%;
+      /* font-size: 0.9rem; */
+      animation: 
+        typing  2s steps(137, end) forwards,
+        blinking .75s infinite;
+      width: 0;
+    }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100%; }
+  }
+
+  @keyframes blinking {
+    from { 
+        border-color: transparent 
+    }
+    to { 
+        border-color: rgb(0 128 0);
+    }
+  }  
+  
+  @keyframes slideup{
+    0% {
+        transform:translate(-50%);
+        opacity: 0;
+        position: absolute;
+    }
+    100% {
+        transform: translate(0 0);
+        opacity: 1;
+        left: 50%; 
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #004b00;
+    color: white;
+    position: bottom;
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+input[type=submit] {
+    height: 40px;
+    width: 110px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    touch-action: manipulation;
+
+}
+
+input[type=submit]:hover {
+    background-color: green; 
+    transform: translateY(-4px);
+    transition: 1s;
+    box-shadow: 0 9px rgb(41, 39, 39);
+} 
+
+input[type=submit]:active {
+   background-color: green;
+   box-shadow:  0 5px #666;
+   transform: translateY(4px);
+} 
+
+input[type=reset]{
+    height: 40px;
+    width: 110px;
+    margin: 2%;
+    cursor: pointer;
+    border: none;
+    padding: 2%;
+    border-radius: 12px;
+    touch-action: manipulation;
+
+}
+
+input[type=reset]:hover {
+    background-color: red; 
+    transform: translateY(-4px);
+    transition: 1s;
+    box-shadow: 0 9px rgb(41, 39, 39);
+} 
+
+input[type=reset]:active {
+   background-color: red;
+   box-shadow:  0 5px #666;
+   transform: translateY(4px);
+} 
+
+.news-button {
+    margin-right: 70px;
+    width: 200px;
+    height: 150px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+}
+
+.news-button:hover{
+    transform: translateY(-4px);
+    transition: 1s;
+    animation-name: color-switch;
+    animation-duration: 1.5s;
+    box-shadow: 9px 13px rgb(41, 39, 39);
+}
+
+@keyframes color-switch {
+    50% {
+        background-color: aqua;
+    }
+    100% {
+        background-color: white;
+    }
+}
+.news-button::active {
+    box-shadow: 5px 9px #666;
+    transform: translateY(4px);
+}

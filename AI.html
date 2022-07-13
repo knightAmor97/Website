@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Human vs computer</title>
+        <link href = "style.css" rel="stylesheet">
+        <script src="slider.js" defer></script>
+        <script src="responsiveNavbar.js" defer></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div id = "logo">
+                <span>&#9842;</span>
+                Raymond Industries
+            </div>
+            <a href="#" class="togglebutton">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class ="navbar-links">
+                <ul>
+                    <li> <div class="dropdown">
+                        <button class="dropbtn">
+                            <span>&#9881;</span>
+                        </button>
+                        <div class="dropdown-content">
+                            <script>
+                                document.querySelector('input[type = "checkbox"].toggle').addEventListener('click',() => {
+                                document.body.classList.toggle('dark')
+                                })
+                            </script>
+                            <a href="#"><input type="checkbox" id="check" class="toggle">
+                                <label for = "check"> </label>
+                            </a>
+                        </div>
+                    </div></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="ethical_issues.html">ethical-issues-in-technology</a></li>
+                    <li><a href="Environment.html">enviormental issues of technology</a></li>
+                    <li><a href="AI.html">humans vs computers</a></li>
+                </ul>
+            </div>
+
+            
+        </nav>
+
+        <div id = "main-page">
+            <div class="front-img">
+                <img src="AI-Image.JPG" alt="front" style="max-width:100%; height:auto;">
+                <div class="glow" id="font"> 
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+                    #font h1 {
+                        font-family: 'Koulen', cursive;
+                        font-size: auto;
+                    }
+                </style> 
+                <h1>A human brain can be 10,000 slower than a computer</h1>
+                </div>
+            </div>
+        </div>
+		<div class= "main-page">
+            <img src="robot in production.jpg" alt="worker"  width=300px length=168px style="border-style:groove; float: right; padding: 5px;">
+            <h2>robots in factorys</h2>
+            <p>Robots have affected humans in the workplace. This is because workers have been replaced with robots. This is as robots are more productive then workers meaning they can produce more products in a day than a normal worker. They are also cheaper as a robot is only a 1 time cost while a worker you have tos pay wages. However workers can do many operations whereas a computer does what its programmed.</p>
+            <br><br>
+            <h3>advantages and disadvantages of robots</h3>
+            <table style="left: 60%; width: 40%">
+                <tr>
+                  <th>Advantages</th>
+                  <th>disadvantages</th>
+                </tr>
+                <tr>
+                  <td>
+                      <li>More productivity(increased output per worker)</li>
+                  </td>
+                  <td>
+                      <li>causes unemployment of workers in assembly line</li>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                      <li>It is much cheaper(workers don't need to be paid wages) </li>
+                    </td>
+                  <td>
+                  <li>They only perform the tasks they are programmed for</li>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                      <li>lower production times</li>
+                  </td>
+                  <td>
+                      <li>it might cause staff to be re-trained or high skill workers</li>
+                  </td>
+                </tr>
+              </table> <br><br>
+              <img src="Feature_AI.jpg" alt="worker"  width=300px length=168px style="border-style:groove; float: left; padding: 5px;">
+            <h2>Automated decision making</h2>
+            <p>When a decision is solely decided by a computer without human involvement. These are made by using algorithms and data and can be used in a range of contexts like employment. This is an issue as a computer might not be fair and a computer might be bias. The decision might not take everything into account as it only uses the information givien. </p>	
+            <br><br>
+            <img src="worker(factory).jpg" alt="worker"  width=300px length=168px style="border-style:groove; float: left; padding: 5px;">
+            <h2>How does this stack up against a human-being</h2>
+            <ul>
+                <li>Humans beings have emotions</li>
+                <li>Humans need breaks so they can work</li>
+                <li>Humans need wages/money in order to survive</li>
+                <li>Humans can do more than one task and can do more ouside there training</li>
+            </ul>		
+            <p>This shows robots can outrank a human in every way as a robot is much more effcient at peforming tasks for a business. However Robots can break down meaning people still must be emoloyed so they can be fixed as quick as possible</p>
+            <p>for now robots are quite new technology and some businesses are intresred into using them</p><br><br>
+
+            <h1 style="font-size:50px;">Its not all bad</h1>
+            <p>Some robots in businesses use robots to work with humans. This would ususally turn out to be better as they both work together</p>
+            <ul>
+                <h4>here are some examples</h4>
+                <li>spreadsheets and documents stored on computers</li>
+                <li>phones and video calls in order for communication to be quicker</li>
+                <li>Research trends</li>
+            </ul>
+            <p>There is many ways it helps computers</p>
+        </div> <br><br>
+        <div class = "footer">
+            <div class = "questions-form">
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto&display=swap');
+                    h1 {
+                        font-family: 'Noto Sans JP', sans-serif;
+                        margin: 2%;
+                        font-size: 17px;
+                    }
+                    .questions-form {
+                        font-family: 'Noto Sans JP', sans-serif;
+                        margin: 2%;
+                    }
+                </style>
+                <h1>any questions? Contact us!</h1>
+                <form method="get" enctype="text/plain">
+                    <b>Name:</b><br><input type="name" name="name" id="name" required><br><br>
+                    <b>Email:</b><br><input type="email" name="email" id="email" required><br><br>
+                    <b> Message:</b><br><textarea rows="5" cols="30" name="message"  required></textarea><br><br>
+                    <input type="submit" value="submit" onclick="valid()">
+                    <input type="reset" value="reset">
+                    <p id="validation"></p>
+                </form>
+                <script>
+                    function valid() {
+                        let val = document.getElementById('name').value;
+                        if(val !="") {
+                           text = "invalid input" 
+                        }
+                    }
+                </script>
+            </div>
+            <div id="newssources">
+                <h1>Tech news</h1>
+                <button class ="news-button">
+                    <a href="https://www.bbc.co.uk/news/technology"><img src="BBC.JPG" alt="BBC" width="156px" length="131px"> </a>
+                </button> <br><br>
+                <button class ="news-button">
+                    <a href="https://www.wired.co.uk/topic/technology"><img src="WIRED.JPG" alt="BBC" width="156px" length="131px"></a>
+                </button> <br><br>
+                <button class ="news-button">
+                    <a href="https://www.techradar.com/uk"><img src="techradar.JPG" alt="BBC" width="156px" length="131px"></a>
+                </button> <br><br>
+            </div>
+        </div>
+  </body>
+</html>
